@@ -1,15 +1,18 @@
 package model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name="category")
 public class Category {
 
     @Id
     private Long id;
 
     private String name;
+
+    @ManyToOne(cascade= CascadeType.PERSIST)
+    private User user;
 
     public Category() {
     }

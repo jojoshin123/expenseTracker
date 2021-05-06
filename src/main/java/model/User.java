@@ -1,10 +1,8 @@
 package model;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name="user")
@@ -15,6 +13,9 @@ public class User {
 
     private String name;
     private String email;
+
+    @OneToMany
+    private Set<Category> categories;
 
     public User() {
     }
