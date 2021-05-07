@@ -3,7 +3,7 @@ package model;
 import javax.persistence.*;
 
 @Entity
-@Table(name="category")
+@Table(name = "category")
 public class Category {
 
     @Id
@@ -11,8 +11,8 @@ public class Category {
 
     private String name;
 
-    @ManyToOne(cascade= CascadeType.PERSIST)
-    private User user;
+//    @ManyToOne(cascade= CascadeType.PERSIST)
+//    private User user;
 
     public Category() {
     }

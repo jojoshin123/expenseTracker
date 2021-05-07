@@ -5,7 +5,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table(name="user")
+@Table(name = "user")
 public class User {
 
     @Id
@@ -14,8 +14,8 @@ public class User {
     private String name;
     private String email;
 
-    @OneToMany
-    private Set<Category> categories;
+//    @OneToMany
+//    private Set<Category> categories;
 
     public User() {
     }

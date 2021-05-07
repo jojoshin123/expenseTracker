@@ -7,7 +7,7 @@ import javax.persistence.Table;
 import java.time.Instant;
 
 @Entity
-@Table(name="expense")
+@Table(name = "expense")
 public class Expense {
 
     @Id
